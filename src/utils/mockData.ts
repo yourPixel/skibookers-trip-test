@@ -1,0 +1,151 @@
+import type { TripState } from 'types/trip.type.ts';
+
+export const trip_1: TripState = {
+    id: 1,
+    resortName: 'Alpine Heights',
+    resortTagline: 'High-altitude thrills with a social apres-ski vibe',
+    resortRegion: 'Valais, Switzerland',
+    resortMeta: 'Intermediate-friendly • Vibrant nightlife • Modern lifts',
+    images: [
+        'https://images.unsplash.com/photo-1550503736-c1a2c9033c03?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+        'https://images.unsplash.com/photo-1730924434730-fc0dd86e86ad?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+        'https://images.unsplash.com/photo-1519659675643-e5885721661f?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+        'https://plus.unsplash.com/premium_photo-1661887037662-5d380367aa30?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+        'https://images.unsplash.com/photo-1489664729864-ee8499a4ddd5?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+    ],
+    components: [
+        {
+            key: 'resort',
+            label: 'Resort',
+            description: 'Alpine Heights (Tour B-12)',
+            price: 0,
+            editable: true,
+        },
+        {
+            key: 'hotel',
+            label: 'Hotel',
+            description: '4★ Chalet, near lifts',
+            price: 620,
+            editable: true,
+        },
+        {
+            key: 'room',
+            label: 'Room',
+            description: 'Double room, breakfast included',
+            price: 180,
+            editable: true,
+        },
+        {
+            key: 'skipass',
+            label: 'Skipass',
+            description: '3 days • Premium zone',
+            price: 210,
+            editable: true,
+        },
+        {
+            key: 'transfer',
+            label: 'Transfer',
+            description: 'From Geneva Airport • Shuttle',
+            price: 90,
+            editable: true,
+        },
+        {
+            key: 'flight',
+            label: 'Flight',
+            description: 'Emirates • Economy • 12.01 15:40',
+            price: 340,
+            editable: true,
+        },
+        {
+            key: 'insurance',
+            label: 'Insurance',
+            description: 'Included • Basic',
+            price: 25,
+            editable: true,
+        },
+        {
+            key: 'addons',
+            label: 'Add-ons',
+            description: 'Ski lessons, spa, nightlife',
+            price: 120,
+            editable: true,
+        },
+    ],
+    recommendationSummary:
+        'Based on your preferences: Party vibe • Medium budget • Group of friends',
+};
+
+export const trip_2: TripState = {
+    id: 2,
+    resortName: 'Glacier Peak',
+    resortTagline: 'Powder-rich slopes and serene alpine views',
+    resortRegion: 'Tirol, Austria',
+    resortMeta: 'Advanced terrain • Family-friendly zones • Scenic routes',
+    images: [
+        'https://images.unsplash.com/photo-1717711084647-39cd4d735e2f?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+        'https://images.unsplash.com/photo-1585908291480-e15519afb5f1?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+        'https://images.unsplash.com/photo-1607868755027-c86ce4c23349?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+        'https://images.unsplash.com/photo-1718794921034-22da174ddcfa?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+        'https://images.unsplash.com/photo-1717711079766-beb43a874530?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+    ],
+    components: [
+        {
+            key: 'resort',
+            label: 'Resort',
+            description: 'Glacier Peak (Tour A-07)',
+            price: 0,
+            editable: true,
+        },
+        {
+            key: 'hotel',
+            label: 'Hotel',
+            description: '5★ Spa Resort',
+            price: 780,
+            editable: true,
+        },
+        {
+            key: 'room',
+            label: 'Room',
+            description: 'Suite + lounge access',
+            price: 260,
+            editable: true,
+        },
+        {
+            key: 'skipass',
+            label: 'Skipass',
+            description: '5 days • Full area',
+            price: 330,
+            editable: true,
+        },
+        {
+            key: 'transfer',
+            label: 'Transfer',
+            description: 'Private Van • Innsbruck Airport',
+            price: 160,
+            editable: true,
+        },
+        {
+            key: 'flight',
+            label: 'Flight',
+            description: 'Austrian • Economy • 11.29 09:10',
+            price: 290,
+            editable: true,
+        },
+        {
+            key: 'insurance',
+            label: 'Insurance',
+            description: 'Premium coverage',
+            price: 60,
+            editable: true,
+        },
+        {
+            key: 'addons',
+            label: 'Add-ons',
+            description: 'Snowmobile tour, spa, lessons',
+            price: 180,
+            editable: true,
+        },
+    ],
+    recommendationSummary:
+        'Based on your preferences: Scenic routes • Higher budget • Couple getaway',
+};

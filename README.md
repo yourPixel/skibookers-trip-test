@@ -25,6 +25,6 @@ Combined with TypeScript and Vite, the project stays fast,
 easy to maintain, and simple to extend later.
 
 ## URL OF DEPLOYED APP
-- https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react
+- https://skibookers-trip-test.vercel.app/
 
 

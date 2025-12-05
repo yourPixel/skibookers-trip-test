@@ -1,73 +1,30 @@
-# React + TypeScript + Vite
+# HANDBOOK
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+The project is a Vite + React (TypeScript) app built with 
+a simple and clear structure. Reusable UI lives in components, 
+pages like TripDetails are placed in pages, and shared layout 
+elements are in layouts. Domain types, helpers, and utilities 
+are separated to keep the code clean. Styling is done with 
+styled-components using a small custom theme and media helpers 
+for consistent responsiveness. Instead of using Feature-Sliced 
+Design or Atomic Design, I chose a lighter, straightforward structure 
+that fits the size of this project and keeps everything easy to navigate.
 
-Currently, two official plugins are available:
+<hr>
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+For the logic, a small Zustand store manages the current 
+trip state and updates. UI sections (Gallery, InfoPanel, 
+PreferencesList) read from the store, which keeps the data 
+flow simple and predictable. I’m a big fan of custom hooks 
+and usually prefer to extract logic out of the UI layer, 
+but in this project there wasn’t a large amount of complex 
+logic, so there was less need to create additional hooks 
+beyond small helpers. A mock API simulates data loading 
+to keep the structure close to a real application. 
+Combined with TypeScript and Vite, the project stays fast, 
+easy to maintain, and simple to extend later.
 
-## React Compiler
+## URL OF DEPLOYED APP
+- https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
 
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
-
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
-
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
-
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
-
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```

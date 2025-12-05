@@ -10,7 +10,7 @@ import MainLayout from 'layouts/MainLayout';
 
 //
 import { ThemeProvider } from 'styled-components';
-import { GlobalStyle, skiTheme } from 'theme.js';
+import { GlobalStyle, skiTheme } from 'styles/theme.ts';
 
 createRoot(document.getElementById('root')!).render(
     <StrictMode>
